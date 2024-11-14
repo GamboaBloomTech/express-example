@@ -11,7 +11,7 @@ app.get('/', (req,res)=>{
 
 app.get("/html", (req, res) => res.type('html').send(html));
 
-const server = app.listen(PORT, ()=>{console.log("server is running")})
+const server = app.listen(PORT, ()=>{console.log("server is up")})
 
 server.keepAliveTimeout = 120*1000 //how long will the server wait for requests
 server.headersTimeout = 120*1000
@@ -20,7 +20,7 @@ const html = `
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello from Render!</title>
+    <title>Hello from me!</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script>
       setTimeout(() => {
